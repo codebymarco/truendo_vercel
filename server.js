@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;  // Render provides a PORT environment va
 // Middleware to log request headers
 app.use((req, res, next) => {
   console.log('Request Headers:', req.headers);
+  console.log('Query Parameters:', req.query);
   next();
 });
 
