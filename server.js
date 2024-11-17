@@ -7,6 +7,7 @@ app.use((req, res, next) => {
 console.log('Request Headers:', req.headers);
  console.log('the req url:', req.url); 
 console.log('Query Parameters:', req.query);
+ console.log('Query Parameters:', req.query);
   next();
 });
 
